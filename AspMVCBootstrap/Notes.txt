@@ -1,0 +1,29 @@
+﻿Control Layouts rendering by using _ViewStart  file
+	if controller == ""
+	clayout = "~Views/Shared/_WebmasterLayout.cshtml";
+	Layout = cLayout
+
+View wise layout
+	define layout within each view
+	@{
+	 Layout = "~/Views/Shared/_WebmasterLayout.cshtml";
+	}
+
+ViewBag
+	dynamic object that you can add properties to in controller and read in view
+
+Controller should support several views
+	HomeController for Index, about, contact
+
+ActionResult in controller maps to URL
+
+@Html.ActionLink
+	return anchor <a> element
+	<li>@Html.ActionLink("About", "About", "Home")</li>
+	linkText, actionName, controllerName e.g. HomeController -> tales/home/about
+
+	
+Area
+
+Free images
+	https://picsum.photos/
